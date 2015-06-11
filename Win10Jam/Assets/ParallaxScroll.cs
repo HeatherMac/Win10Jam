@@ -38,7 +38,7 @@ public class ParallaxScroll : MonoBehaviour {
         CurrentLayer.transform.position = new Vector3(CurrentLayer.transform.position.x - currentSpeed, YLoc, CurrentLayer.transform.position.z);
         OffScreenLayer.transform.position = new Vector3(OffScreenLayer.transform.position.x - currentSpeed, YLoc, OffScreenLayer.transform.position.z);
 
-        if (CurrentLayer.transform.position.x < cutoff)
+        if (CurrentLayer.transform.position.x < (cutoff + GetComponentInParent<Transform>().position.x))
         {
             CurrentLayer.transform.position = new Vector3(CurrentLayer.transform.position.x + 400.0f, YLoc, CurrentLayer.transform.position.z);
 
