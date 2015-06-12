@@ -11,7 +11,7 @@ public class ChangeLevel : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        LevelToLoad = GameData.NextCutSceneToLoad;
+   
         if (LevelText == "null")
         {
             LevelText = LevelToLoad;

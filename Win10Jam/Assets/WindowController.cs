@@ -13,6 +13,10 @@ public class WindowController : MonoBehaviour {
         //this fucking shit
         GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = true;
+        var x = Random.Range(-1f, 1f)*360.0f;
+      
+        crackController.transform.rotation = Quaternion.Euler(0, 0, x);
+
     }
 	
 	// Update is called once per frame

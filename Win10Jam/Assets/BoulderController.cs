@@ -55,6 +55,7 @@ public class BoulderController : MonoBehaviour {
 
     void Kill()
     {
-        GameObject.Destroy(gameObject);
+        Destroy(gameObject);
+        Debug.Log("falsed");
     }
 }

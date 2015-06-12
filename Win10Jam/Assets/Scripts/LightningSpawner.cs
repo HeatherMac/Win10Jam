@@ -54,6 +54,8 @@ public class LightningSpawner : MonoBehaviour
         int index = Random.Range(0, LightningSprites.Length);
         float x = Random.Range(camMinX, camMaxX);
 
+
+
         GameObject go = (GameObject)Instantiate(LightningSprites[index], new Vector3(x, camY), Quaternion.identity);
 
         flash.SetActive(true);

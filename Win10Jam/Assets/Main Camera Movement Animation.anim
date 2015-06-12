@@ -38,18 +38,13 @@ AnimationClip:
         tangentMode: 0
       - time: 24.9833336
         value: {x: 96.8000031, y: -22.1000004, z: -10}
-        inSlope: {x: 0, y: -1.77508998, z: 0}
-        outSlope: {x: 0, y: -1.77508998, z: 0}
-        tangentMode: 0
-      - time: 30
-        value: {x: 96.8000031, y: -38.9000015, z: -10}
-        inSlope: {x: 2.92976546, y: -1.67441881, z: 0}
-        outSlope: {x: 2.92976546, y: -1.67441881, z: 0}
+        inSlope: {x: 1.4599998, y: -.940671146, z: 0}
+        outSlope: {x: 1.4599998, y: -.940671146, z: 0}
         tangentMode: 0
       - time: 34.9833336
         value: {x: 126, y: -38.9000015, z: -10}
-        inSlope: {x: 2.92976546, y: -2.82943106, z: 0}
-        outSlope: {x: 2.92976546, y: -2.82943106, z: 0}
+        inSlope: {x: 1.4599998, y: -3.66943121, z: 0}
+        outSlope: {x: 1.4599998, y: -3.66943121, z: 0}
         tangentMode: 0
       - time: 39.9666672
         value: {x: 126, y: -67.0999985, z: -10}
@@ -109,6 +104,74 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: 
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.400000006, y: 106.300003, z: 0}
+        inSlope: {x: -.410596013, y: -1.89404011, z: 0}
+        outSlope: {x: -.410596013, y: -1.89404011, z: 0}
+        tangentMode: 0
+      - time: 15.1000004
+        value: {x: -6.5999999, y: 77.6999969, z: 0}
+        inSlope: {x: .425210536, y: -10.0487156, z: 0}
+        outSlope: {x: .425210536, y: -10.0487156, z: 0}
+        tangentMode: 0
+      - time: 20.0166664
+        value: {x: -.400000006, y: -11.8000002, z: 0}
+        inSlope: {x: .630508542, y: -9.10169601, z: 0}
+        outSlope: {x: .630508542, y: -9.10169601, z: 0}
+        tangentMode: 0
+      - time: 24.9333324
+        value: {x: -.400000006, y: -11.8000002, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: DangerousThings/IceBoulder
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 44.9599991, y: 125.5, z: 0}
+        inSlope: {x: -1.67284751, y: -2.29801297, z: 0}
+        outSlope: {x: -1.67284751, y: -2.29801297, z: 0}
+        tangentMode: 0
+      - time: 15.1000004
+        value: {x: 19.7000008, y: 90.8000031, z: 0}
+        inSlope: {x: -2.29066133, y: -6.33544779, z: 0}
+        outSlope: {x: -2.29066133, y: -6.33544779, z: 0}
+        tangentMode: 0
+      - time: 24.9333324
+        value: {x: -8.89999962, y: -11.1999998, z: 0}
+        inSlope: {x: -2.90847492, y: -10.3728828, z: 0}
+        outSlope: {x: -2.90847492, y: -10.3728828, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: DangerousThings/IceBoulder (1)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 21.1000004, y: 147.399994, z: 0}
+        inSlope: {x: -.0993377492, y: 0, z: 0}
+        outSlope: {x: -.0993377492, y: 0, z: 0}
+        tangentMode: 0
+      - time: 15.1000004
+        value: {x: 19.6000004, y: 147.399994, z: 0}
+        inSlope: {x: -.873659849, y: -5.19282484, z: 0}
+        outSlope: {x: -.873659849, y: -5.19282484, z: 0}
+        tangentMode: 0
+      - time: 29.9666672
+        value: {x: -4.9000001, y: -7, z: 0}
+        inSlope: {x: -1.647982, y: -10.3856497, z: 0}
+        outSlope: {x: -1.647982, y: -10.3856497, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: DangerousThings/IceBoulder 2
   m_ScaleCurves: []
   m_FloatCurves:
   - curve:
@@ -116,24 +179,139 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 20
-        inSlope: 0
-        outSlope: 0
+        inSlope: .00111132115
+        outSlope: .00111132115
         tangentMode: 10
       - time: 89.9833298
-        value: 20
-        inSlope: .998335779
-        outSlope: .998335779
+        value: 20.1000004
+        inSlope: .221713781
+        outSlope: .221713781
         tangentMode: 10
-      - time: 100
-        value: 40
-        inSlope: 1.99667156
-        outSlope: 1.99667156
+      - time: 119.916664
+        value: 33.3400002
+        inSlope: .442316234
+        outSlope: .442316234
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: orthographic size
     path: 
     classID: 20
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 60
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 89.9666672
+        value: 60
+        inSlope: .500834763
+        outSlope: .500834763
+        tangentMode: 10
+      - time: 119.916664
+        value: 90
+        inSlope: 1.00166953
+        outSlope: 1.00166953
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Size.x
+    path: SmashableArea
+    classID: 61
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 30
+        inSlope: .166782498
+        outSlope: .166782498
+        tangentMode: 10
+      - time: 119.916664
+        value: 50
+        inSlope: .166782498
+        outSlope: .166782498
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Size.y
+    path: SmashableArea
+    classID: 61
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 15.1000004
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 29.9666672
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: DangerousThings/IceBoulder 2
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 15.1000004
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 24.9333324
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: DangerousThings/IceBoulder (1)
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 15.1000004
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 20.0166664
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: DangerousThings/IceBoulder
+    classID: 1
     script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -149,10 +327,58 @@ AnimationClip:
       classID: 4
       customType: 0
       isPPtrCurve: 0
+    - path: 4268797340
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1623969382
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1763279854
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
     - path: 0
       attribute: 2389637943
       script: {fileID: 0}
       classID: 20
+      customType: 0
+      isPPtrCurve: 0
+    - path: 507028411
+      attribute: 4197328169
+      script: {fileID: 0}
+      classID: 61
+      customType: 0
+      isPPtrCurve: 0
+    - path: 507028411
+      attribute: 2368279999
+      script: {fileID: 0}
+      classID: 61
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1763279854
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1623969382
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4268797340
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
       customType: 0
       isPPtrCurve: 0
     pptrCurveMapping: []
@@ -199,18 +425,13 @@ AnimationClip:
         tangentMode: 10
       - time: 24.9833336
         value: 96.8000031
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 30
-        value: 96.8000031
-        inSlope: 2.92976546
-        outSlope: 2.92976546
+        inSlope: 1.4599998
+        outSlope: 1.4599998
         tangentMode: 10
       - time: 34.9833336
         value: 126
-        inSlope: 2.92976546
-        outSlope: 2.92976546
+        inSlope: 1.4599998
+        outSlope: 1.4599998
         tangentMode: 10
       - time: 39.9666672
         value: 126
@@ -298,18 +519,13 @@ AnimationClip:
         tangentMode: 10
       - time: 24.9833336
         value: -22.1000004
-        inSlope: -1.77508998
-        outSlope: -1.77508998
-        tangentMode: 10
-      - time: 30
-        value: -38.9000015
-        inSlope: -1.67441881
-        outSlope: -1.67441881
+        inSlope: -.940671146
+        outSlope: -.940671146
         tangentMode: 10
       - time: 34.9833336
         value: -38.9000015
-        inSlope: -2.82943106
-        outSlope: -2.82943106
+        inSlope: -3.66943121
+        outSlope: -3.66943121
         tangentMode: 10
       - time: 39.9666672
         value: -67.0999985
@@ -400,11 +616,6 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 30
-        value: -10
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
       - time: 34.9833336
         value: -10
         inSlope: 0
@@ -476,24 +687,370 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 20
-        inSlope: 0
-        outSlope: 0
+        inSlope: .00111132115
+        outSlope: .00111132115
         tangentMode: 10
       - time: 89.9833298
-        value: 20
-        inSlope: .998335779
-        outSlope: .998335779
+        value: 20.1000004
+        inSlope: .221713781
+        outSlope: .221713781
         tangentMode: 10
-      - time: 100
-        value: 40
-        inSlope: 1.99667156
-        outSlope: 1.99667156
+      - time: 119.916664
+        value: 33.3400002
+        inSlope: .442316234
+        outSlope: .442316234
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: orthographic size
     path: 
     classID: 20
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 60
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 89.9666672
+        value: 60
+        inSlope: .500834763
+        outSlope: .500834763
+        tangentMode: 10
+      - time: 119.916664
+        value: 90
+        inSlope: 1.00166953
+        outSlope: 1.00166953
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Size.x
+    path: SmashableArea
+    classID: 61
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 30
+        inSlope: .166782498
+        outSlope: .166782498
+        tangentMode: 10
+      - time: 119.916664
+        value: 50
+        inSlope: .166782498
+        outSlope: .166782498
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Size.y
+    path: SmashableArea
+    classID: 61
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.400000006
+        inSlope: -.410596013
+        outSlope: -.410596013
+        tangentMode: 10
+      - time: 15.1000004
+        value: -6.5999999
+        inSlope: .425210536
+        outSlope: .425210536
+        tangentMode: 10
+      - time: 20.0166664
+        value: -.400000006
+        inSlope: .630508542
+        outSlope: .630508542
+        tangentMode: 10
+      - time: 24.9333324
+        value: -.400000006
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: DangerousThings/IceBoulder
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 106.300003
+        inSlope: -1.89404011
+        outSlope: -1.89404011
+        tangentMode: 10
+      - time: 15.1000004
+        value: 77.6999969
+        inSlope: -10.0487156
+        outSlope: -10.0487156
+        tangentMode: 10
+      - time: 20.0166664
+        value: -11.8000002
+        inSlope: -9.10169601
+        outSlope: -9.10169601
+        tangentMode: 10
+      - time: 24.9333324
+        value: -11.8000002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: DangerousThings/IceBoulder
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 15.1000004
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 20.0166664
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 24.9333324
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: DangerousThings/IceBoulder
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 44.9599991
+        inSlope: -1.67284751
+        outSlope: -1.67284751
+        tangentMode: 10
+      - time: 15.1000004
+        value: 19.7000008
+        inSlope: -2.29066133
+        outSlope: -2.29066133
+        tangentMode: 10
+      - time: 24.9333324
+        value: -8.89999962
+        inSlope: -2.90847492
+        outSlope: -2.90847492
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: DangerousThings/IceBoulder (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 125.5
+        inSlope: -2.29801297
+        outSlope: -2.29801297
+        tangentMode: 10
+      - time: 15.1000004
+        value: 90.8000031
+        inSlope: -6.33544779
+        outSlope: -6.33544779
+        tangentMode: 10
+      - time: 24.9333324
+        value: -11.1999998
+        inSlope: -10.3728828
+        outSlope: -10.3728828
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: DangerousThings/IceBoulder (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 15.1000004
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 24.9333324
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: DangerousThings/IceBoulder (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 21.1000004
+        inSlope: -.0993377492
+        outSlope: -.0993377492
+        tangentMode: 10
+      - time: 15.1000004
+        value: 19.6000004
+        inSlope: -.873659849
+        outSlope: -.873659849
+        tangentMode: 10
+      - time: 29.9666672
+        value: -4.9000001
+        inSlope: -1.647982
+        outSlope: -1.647982
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: DangerousThings/IceBoulder 2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 147.399994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 15.1000004
+        value: 147.399994
+        inSlope: -5.19282484
+        outSlope: -5.19282484
+        tangentMode: 10
+      - time: 29.9666672
+        value: -7
+        inSlope: -10.3856497
+        outSlope: -10.3856497
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: DangerousThings/IceBoulder 2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 15.1000004
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 29.9666672
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: DangerousThings/IceBoulder 2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 15.1000004
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 29.9666672
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: DangerousThings/IceBoulder 2
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 15.1000004
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 24.9333324
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: DangerousThings/IceBoulder (1)
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 15.1000004
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 20.0166664
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: DangerousThings/IceBoulder
+    classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 1
