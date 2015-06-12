@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(AudioSource))]
 
@@ -9,25 +10,37 @@ public class SoundBehaviour : MonoBehaviour
     public enum sources
     {
         Music,
-        Bounce,
-        Coin,
-        Jump,
-        Rocket,
-        Teleporter,
-        Walk
-
+        GlassSmash,
+        AmbientCity,
+        Tap,
+        Rain
     }
+
+    public enum TapTypes
+    {
+        None,
+        Fixing,
+        Thud,
+        BreakingHail
+    }
+
     public AudioClip CurrentlyPlaying;
 
    
-    public void PlaySong(AudioClip track)
+    public void PlayMusic(AudioClip track)
     {
         CurrentlyPlaying = track;
         audioSource[(int)sources.Music].clip = CurrentlyPlaying;
         audioSource[(int)sources.Music].Play();
-
+        audioSource[(int)sources.Music].loop = true;
     }
-    
+
+    public void PlayRain()
+    {
+        audioSource[(int)sources.Rain].clip = Rain;
+        audioSource[(int)sources.Rain].Play();
+        audioSource[(int)sources.Rain].loop = true;
+    }
     
     private static SoundBehaviour instance = null;
     public static SoundBehaviour Instance
@@ -35,41 +48,82 @@ public class SoundBehaviour : MonoBehaviour
         get { return instance; }
     }
 
+
     AudioSource[] audioSource;
-    public AudioClip Bounce;
-    public AudioClip Coin;   
-    public AudioClip Jump;  
-    public AudioClip Rocket;
-    public AudioClip Teleporter;
-    public AudioClip Walking;
 
-    public void CoinPickupSound()
-    {
-        audioSource[(int)sources.Coin].clip = Coin;
-        audioSource[(int)sources.Coin].Play();
+    // audio
 
-    }
-    public void JumpSound()
-    {
-        audioSource[(int)sources.Jump].clip = Jump;
-        audioSource[(int)sources.Jump].Play();
-    }
-    public void TeleporterSound()
-    {
-        audioSource[(int)sources.Teleporter].clip = Teleporter;
-        audioSource[(int)sources.Teleporter].Play();
-    }
-    public void WalkSound()
-    {
-        audioSource[(int)sources.Walk].clip = Walking;
-        audioSource[(int)sources.Walk].Play();
-    }
-    public void BounceSound()
-    {
-        audioSource[(int)sources.Bounce].clip = Bounce;
-        audioSource[(int)sources.Bounce].Play();
+    public List<AudioClip> GlassSmashes;
+    public AudioClip AmbientCity;   
+    public List<AudioClip> FixingTaps;
+    public AudioClip Rain;
+    //
 
+    // random history
+    int lastTap = -1;
+    int lastSmashed = -1;
+
+    [System.Serializable]
+    public struct AudioPair
+    {
+        public TapTypes key;
+        public AudioClip value;
     }
+
+    public void SoundGlassSmash()
+    {
+
+        int i;
+        if (lastSmashed == -1)
+        {
+            i = Random.Range(0, GlassSmashes.Count - 1);
+        }
+        else
+        {
+            do
+            {
+                i = Random.Range(0, GlassSmashes.Count - 1);
+            } while (i == lastSmashed);
+        }
+        lastSmashed = i;
+        audioSource[(int)sources.GlassSmash].clip = GlassSmashes[i];
+        audioSource[(int)sources.GlassSmash].Play();
+    }
+
+
+    public void SoundTap(TapTypes tapType)
+    {
+        switch (tapType)
+        {
+            case TapTypes.None:
+                break;
+            case TapTypes.Fixing:
+                int i;
+                if(lastTap == -1)
+                {
+                    i = Random.Range(0, FixingTaps.Count - 1);
+                }
+                else
+                {
+                    do
+                    {
+                        i = Random.Range(0, FixingTaps.Count - 1);
+                    } while (i == lastTap);
+                }
+                lastTap = i;
+                audioSource[(int)sources.Tap].clip = FixingTaps[i];
+                break;
+            case TapTypes.Thud:
+                break;
+            case TapTypes.BreakingHail:
+                break;
+            default:
+                break;
+        }
+        audioSource[(int)sources.Tap].Play();
+    }
+
+    
     void Awake()
     {
         if (instance != null && instance != this)
@@ -83,6 +137,8 @@ public class SoundBehaviour : MonoBehaviour
         }
 
         audioSource = GetComponents<AudioSource>();
+        PlayMusic(Tracks[Random.Range(0, Tracks.Length - 1)]);
+        PlayRain();
     }
 
 
@@ -95,17 +151,15 @@ public class SoundBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (!audioSource[(int)sources.Music].isPlaying && Application.loadedLevelName != "MainMenuScene" && Application.loadedLevelName != "LevelTreeFinal")
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            Debug.Log(Application.loadedLevelName);
-            PlaySong(Tracks[Random.Range(0, Tracks.Length - 1)]);
-            Debug.Log("change track");
+            this.SoundGlassSmash();
         }
-        else if (Application.loadedLevelName == "LevelTreeFinal")
+        else if (Input.GetKeyDown(KeyCode.S))
         {
-            Mute(true);
+            this.SoundTap(TapTypes.Fixing);
         }
     }
 

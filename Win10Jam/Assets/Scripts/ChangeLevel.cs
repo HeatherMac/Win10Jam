@@ -27,7 +27,7 @@ public class ChangeLevel : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D Col)
     {     
         //any other necessary level ending code
-        SoundBehaviour.Instance.TeleporterSound();
+        //SoundBehaviour.Instance.TeleporterSound();
         if (Col.name == "Player")
         {
             if (Text)

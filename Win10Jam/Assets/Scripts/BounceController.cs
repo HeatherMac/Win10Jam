@@ -51,7 +51,7 @@ public class BounceController : MonoBehaviour {
     {
         if (col.gameObject.name == "Player")
         {
-            SoundBehaviour.Instance.BounceSound();
+            //SoundBehaviour.Instance.BounceSound();
 
         }
 
