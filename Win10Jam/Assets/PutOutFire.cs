@@ -20,6 +20,9 @@ public class PutOutFire : MonoBehaviour
 
     void OnMouseDown()
     {
+
+        GameData.FiresExtinguished++;
+        
         tapsToKill--;
 
         steam.GetComponent<ParticleSystem>().Play();

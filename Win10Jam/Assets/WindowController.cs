@@ -33,6 +33,8 @@ public class WindowController : MonoBehaviour {
     void OnMouseDown()
     {
         Debug.Log("click");
+        GameData.CracksRepaired++;
+        
         crackController.fix();
     }
   void OnTriggerEnter2D(Collider2D col)

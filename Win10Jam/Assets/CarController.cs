@@ -41,6 +41,9 @@ public class CarController : MonoBehaviour {
         SR.sprite = BrockCar;
         SR.color = BCColour;
 
+        GameData.CarsLost++;
+        GameData.CarsSaved--;
+
         GetComponentInChildren<ParticleSystem>().Play();
         //Lose a life?
         //Add fire

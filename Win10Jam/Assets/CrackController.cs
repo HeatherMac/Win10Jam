@@ -32,9 +32,11 @@ public class CrackController : MonoBehaviour {
         if(state != WindowState.Broken)
         {
             state++;
+            GameData.TotalCracks++;
             updateRenderer();
             if (state == WindowState.Broken)
             {
+                GameData.WindowsLost++;
                 Instantiate(glassShatter, transform.position, Quaternion.identity);
                 Debug.Log("shatttered");
 

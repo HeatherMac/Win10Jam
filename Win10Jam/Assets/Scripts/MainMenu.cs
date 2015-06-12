@@ -31,7 +31,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-
+        Application.LoadLevel("TomScene");
     }
 
     public void Quit()
