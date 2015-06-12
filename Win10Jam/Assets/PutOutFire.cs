@@ -8,8 +8,9 @@ public class PutOutFire : MonoBehaviour
     private int tapsToKill = 5;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+    {
+        steam.transform.position = transform.position;	
 	}
 	
 	// Update is called once per frame

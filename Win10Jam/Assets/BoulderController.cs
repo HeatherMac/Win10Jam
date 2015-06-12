@@ -32,7 +32,9 @@ public class BoulderController : MonoBehaviour {
 
     void OnMouseDown()
     {
-        Lives -= 1;        
+        Lives -= 1;
+
+        iceParts.transform.position = transform.position;
 
         if (Lives < 1)
         {
