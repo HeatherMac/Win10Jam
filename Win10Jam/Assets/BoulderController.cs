@@ -7,7 +7,7 @@ public class BoulderController : MonoBehaviour {
 
     public int HitPercentageReduction;
 
-    public GameObject iceParts;
+
 
     SpriteRenderer SR;
 
@@ -34,15 +34,15 @@ public class BoulderController : MonoBehaviour {
     {
         Lives -= 1;
 
-        iceParts.transform.position = transform.position;
+     
 
         if (Lives < 1)
         {
-            iceParts.GetComponent<ParticleSystem>().startSize *= 2f;
+          
             Kill();
         }
 
-        iceParts.GetComponent<ParticleSystem>().Play();
+     
 
         float scale = transform.localScale.x;
 

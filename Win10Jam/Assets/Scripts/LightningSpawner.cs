@@ -68,5 +68,6 @@ public class LightningSpawner : MonoBehaviour
         flash.SetActive(true);
 
         StartCoroutine(DestroyLightning(go));
+        Messenger.Broadcast("SpawnLightningFLASH");
     }
 }

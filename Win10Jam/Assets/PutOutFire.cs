@@ -10,6 +10,7 @@ public class PutOutFire : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+
         steam.transform.position = transform.position;	
     
 	}
