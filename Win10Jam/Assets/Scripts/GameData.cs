@@ -6,22 +6,14 @@ public class GameData : MonoBehaviour {
 
     private static GameData _GData;
 
-    public static int PickupsCollected = 0;
-    public static List<string> LevelChoiceList = new List<string>();
-
-    public static int CharacterChoice = 1;
-
-    public static string NextCutSceneToLoad = "null";
-
-    public static string PlayerName;
-
-    public static string LevelRoute;
-
-    public static string CharacterSector;
-
-    public static int CoinsCollected;
-
-    public static int ItemsCollected;
+    public static int WindowsLost = 10;
+    public static int WindowsSaved = 20;
+    public static int TotalCracks = 10;
+    public static int CracksRepaired = 30;
+    public static int CarsSaved = 20;
+    public static int CarsLost = 10;
+    public static int FiresExtinguished = 30;
+    public static int BridgesSaved = 10;
 
 
     public static GameData GData
