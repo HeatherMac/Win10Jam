@@ -49,19 +49,24 @@ public class SoundBehaviour : MonoBehaviour
     }
 
 
-    AudioSource[] audioSource;
+    static AudioSource[] audioSource;
 
     // audio
 
-    public List<AudioClip> GlassSmashes;
-    public AudioClip AmbientCity;   
-    public List<AudioClip> FixingTaps;
-    public AudioClip Rain;
+     public List<AudioClip> GlassSmashes1;
+     public AudioClip AmbientCity1;
+    public List<AudioClip> FixingTaps1;
+     public AudioClip Rain1;
+
+    static public List<AudioClip> GlassSmashes;
+    static public AudioClip AmbientCity;
+    static public List<AudioClip> FixingTaps;
+    static public AudioClip Rain;
     //
 
     // random history
-    int lastTap = -1;
-    int lastSmashed = -1;
+    static int  lastTap = -1;
+    static int lastSmashed = -1;
 
     [System.Serializable]
     public struct AudioPair
@@ -70,7 +75,7 @@ public class SoundBehaviour : MonoBehaviour
         public AudioClip value;
     }
 
-    public void SoundGlassSmash()
+    public static void SoundGlassSmash()
     {
 
         int i;
@@ -91,8 +96,10 @@ public class SoundBehaviour : MonoBehaviour
     }
 
 
-    public void SoundTap(TapTypes tapType)
+    public static void SoundTap()
     {
+        TapTypes tapType = TapTypes.Fixing;
+
         switch (tapType)
         {
             case TapTypes.None:
@@ -138,6 +145,13 @@ public class SoundBehaviour : MonoBehaviour
 
         audioSource = GetComponents<AudioSource>();
         PlayMusic(Tracks[Random.Range(0, Tracks.Length - 1)]);
+        
+
+        GlassSmashes = GlassSmashes1;
+        AmbientCity = AmbientCity1;
+        FixingTaps = FixingTaps1;
+        Rain = Rain1;
+
         PlayRain();
     }
 
@@ -153,14 +167,14 @@ public class SoundBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            this.SoundGlassSmash();
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            this.SoundTap(TapTypes.Fixing);
-        }
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    this.SoundGlassSmash();
+        //}
+        //else if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    this.SoundTap(TapTypes.Fixing);
+        //}
     }
 
    

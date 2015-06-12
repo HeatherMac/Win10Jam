@@ -33,6 +33,8 @@ public class CrackController : MonoBehaviour {
         {
             state++;
             GameData.TotalCracks++;
+            SoundBehaviour.SoundGlassSmash();
+            
             updateRenderer();
             if (state == WindowState.Broken)
             {

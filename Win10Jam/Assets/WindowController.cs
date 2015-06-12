@@ -34,6 +34,7 @@ public class WindowController : MonoBehaviour {
     {
         Debug.Log("click");
         GameData.CracksRepaired++;
+        SoundBehaviour.SoundTap();
         
         crackController.fix();
     }
