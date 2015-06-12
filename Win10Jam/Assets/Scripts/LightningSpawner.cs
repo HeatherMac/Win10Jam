@@ -18,9 +18,9 @@ public class LightningSpawner : MonoBehaviour
         float height = 2f * mainCamera.GetComponent<Camera>().orthographicSize;
         float width = height * mainCamera.GetComponent<Camera>().aspect;
 
-        camY = height / 2;
-        camMinX = -width / 2;
-        camMaxX = width / 2;
+        camY = mainCamera.transform.position.y;
+        camMinX = mainCamera.transform.position.x - width / 2;
+        camMaxX = mainCamera.transform.position.x + width / 2;
 
         StartCoroutine(Timer());
     }
@@ -54,7 +54,7 @@ public class LightningSpawner : MonoBehaviour
         int index = Random.Range(0, LightningSprites.Length);
         float x = Random.Range(camMinX, camMaxX);
 
-        GameObject go = (GameObject)Instantiate(LightningSprites[index], new Vector3(x, LightningSprites[index].transform.position.y), Quaternion.identity);
+        GameObject go = (GameObject)Instantiate(LightningSprites[index], new Vector3(x, camY), Quaternion.identity);
 
         flash.SetActive(true);
 
