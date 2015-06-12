@@ -7,7 +7,7 @@ public class GameData : MonoBehaviour {
     private static GameData _GData;
 
     public static int WindowsLost = 0;
-    public static int WindowsSaved = 0;
+    public static int WindowsSaved = 400;
     public static int TotalCracks = 0;
     public static int CracksRepaired = 0;
     public static int CarsSaved = 2;
