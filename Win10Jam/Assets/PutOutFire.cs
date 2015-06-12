@@ -11,12 +11,17 @@ public class PutOutFire : MonoBehaviour
 	void Start ()
     {
         steam.transform.position = transform.position;	
+    
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+
+        steam.transform.position = transform.position;	
 	}
+	
+
+
 
     void OnMouseDown()
     {

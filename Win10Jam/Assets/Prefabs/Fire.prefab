@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184020}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 6.42306042, y: 10.3445148, z: 0}
+  m_LocalPosition: {x: 103.300003, y: 7.4000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 455734}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2547e29f483a042a62cbe6f94623cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steam: {fileID: 0}
+  steam: {fileID: 197820, guid: 341aad7f0bdf83544a0d97f1befe699b, type: 2}
 --- !u!198 &19884440
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -1146,7 +1146,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: 1.5
+      scalar: 11.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1306,7 +1306,7 @@ ParticleSystem:
         rgba: 4278190335
       minMaxState: 2
     startSize:
-      scalar: .400000006
+      scalar: 4
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1353,12 +1353,12 @@ ParticleSystem:
       minMaxState: 3
     gravityModifier: 0
     inheritVelocity: 0
-    maxNumParticles: 2000
+    maxNumParticles: 2775
   ShapeModule:
     serializedVersion: 2
     enabled: 1
     type: 4
-    radius: .141626835
+    radius: 3.5
     angle: 23.8800869
     length: 5
     boxX: 1
@@ -1372,7 +1372,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 250
+      scalar: 44
       maxCurve:
         serializedVersion: 2
         m_Curve:
