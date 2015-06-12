@@ -10,13 +10,13 @@ public class LightningSpawner : MonoBehaviour
     private float camMinX;
     private float camMaxX;
     private float camY;
-    
+    private float width, height;
 
 	// Use this for initialization
 	void Start ()
     {
-        float height = 2f * mainCamera.GetComponent<Camera>().orthographicSize;
-        float width = height * mainCamera.GetComponent<Camera>().aspect;
+        height = 2f * mainCamera.GetComponent<Camera>().orthographicSize;
+        width = height * mainCamera.GetComponent<Camera>().aspect;
 
         camY = mainCamera.transform.position.y;
         camMinX = mainCamera.transform.position.x - width / 2;
@@ -28,8 +28,10 @@ public class LightningSpawner : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-	    
-	}
+        camY = mainCamera.transform.position.y;
+        camMinX = mainCamera.transform.position.x - width / 2;
+        camMaxX = mainCamera.transform.position.x + width / 2;
+    }
 
     IEnumerator Timer()
     {
