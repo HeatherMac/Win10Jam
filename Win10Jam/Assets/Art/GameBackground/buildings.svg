@@ -27,6 +27,30 @@
          offset="0"
          id="stop4142" />
     </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Greyscale"
+       id="filter8456">
+      <feColorMatrix
+         values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 1 0 "
+         id="feColorMatrix8458" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Greyscale"
+       id="filter8460">
+      <feColorMatrix
+         values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 1 0 "
+         id="feColorMatrix8462" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Greyscale"
+       id="filter8464">
+      <feColorMatrix
+         values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 1 0 "
+         id="feColorMatrix8466" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -36,8 +60,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-524.2987"
-     inkscape:cy="1098.1774"
+     inkscape:cx="-322.14857"
+     inkscape:cy="1061.3389"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -64,7 +88,10 @@
      id="layer1">
     <g
        id="g8250"
-       transform="translate(-151.42858,-2.8571429)">
+       transform="translate(-151.42858,1.4285888e-8)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       style="filter:url(#filter8456)">
       <g
          id="g8156">
         <rect
@@ -177,7 +204,10 @@
     </g>
     <g
        id="g8078"
-       transform="translate(-409.14286,-2.8571391)">
+       transform="translate(-363.42857,5.7142857)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       style="filter:url(#filter8460)">
       <rect
          y="-1112.3947"
          x="-1653.6198"
@@ -841,7 +871,10 @@
     </g>
     <g
        id="g8164"
-       transform="translate(97.142857,-2.8571429)">
+       transform="translate(97.142857,-2.8571429)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       style="filter:url(#filter8464)">
       <g
          style="fill:#5151aa;fill-opacity:1"
          transform="matrix(1.2522302,0,0,0.80609711,-916.96522,-55.176065)"
