@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 4f9712627ada5aa4cbc1aff6c98ce1ea
+timeCreated: 1434049501
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: noun_38446_cc_0
+    21300002: noun_38446_cc_1
+    21300004: noun_38446_cc_2
+    21300006: noun_38446_cc_3
+    21300008: noun_38446_cc_4
+    21300010: noun_38446_cc_5
+    21300012: noun_38446_cc_6
+    21300014: noun_38446_cc_7
+    21300016: noun_38446_cc_8
+    21300018: noun_38446_cc_9
+    21300020: noun_38446_cc_10
+    21300022: noun_38446_cc_11
+    21300024: noun_38446_cc_12
+    21300026: noun_38446_cc_13
+    21300028: noun_38446_cc_14
+    21300030: noun_38446_cc_15
+    21300032: noun_38446_cc_16
+    21300034: noun_38446_cc_17
+    21300036: noun_38446_cc_18
+    21300038: noun_38446_cc_19
+    21300040: noun_38446_cc_20
+    21300042: noun_38446_cc_21
+    21300044: noun_38446_cc_22
+    21300046: noun_38446_cc_23
+    21300048: noun_38446_cc_24
+    21300050: noun_38446_cc_25
+    21300052: noun_38446_cc_26
+    21300054: noun_38446_cc_27
+    21300056: noun_38446_cc_28
+    21300058: noun_38446_cc_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: noun_38446_cc_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 600
+        width: 525
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: noun_38446_cc_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 500
+        width: 525
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: noun_38446_cc_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 400
+        width: 525
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: noun_38446_cc_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 300
+        width: 525
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: noun_38446_cc_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 200
+        width: 525
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: noun_38446_cc_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 100
+        width: 525
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

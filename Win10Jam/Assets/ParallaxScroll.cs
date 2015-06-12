@@ -4,10 +4,8 @@ using System.Collections;
 public class ParallaxScroll : MonoBehaviour {
 
     public float Speed = 1.0f;
-    public float cutoff = -200f;
     float currentSpeed;
 
-    float offset = 0;
 
     float YLoc;
 
@@ -16,38 +14,58 @@ public class ParallaxScroll : MonoBehaviour {
 
     GameObject CurrentLayer;
     GameObject OffScreenLayer;
+    GameObject ParallaxStop;
+    GameObject ParallaxStart;
 
-    public bool PauseScroll = false;
+    bool PauseScroll = false;
+    public bool Reversed = false;
+    public bool Sky = false;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
+
+        ParallaxStop = GameObject.Find("ParallaxStop");
+        ParallaxStart = GameObject.Find("ParallaxStart");
 
         currentSpeed = Speed;
 
         CurrentLayer = LayerA;
         OffScreenLayer = LayerB;
 
-        cutoff = (CurrentLayer.transform.position.x - 210.0f);
         YLoc = CurrentLayer.transform.position.y;
 
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+    }
+
+    // Update is called once per frame
+    void FixedUpdate() {
 
         CurrentLayer.transform.position = new Vector3(CurrentLayer.transform.position.x - currentSpeed, YLoc, CurrentLayer.transform.position.z);
         OffScreenLayer.transform.position = new Vector3(OffScreenLayer.transform.position.x - currentSpeed, YLoc, OffScreenLayer.transform.position.z);
 
-        if (CurrentLayer.transform.position.x < (cutoff + GetComponentInParent<Transform>().position.x))
+        if (Reversed)
         {
-            CurrentLayer.transform.position = new Vector3(CurrentLayer.transform.position.x + 400.0f, YLoc, CurrentLayer.transform.position.z);
+            if (CurrentLayer.transform.position.x < (ParallaxStop.transform.position.x + 200))
+            {
+                CurrentLayer.transform.position = new Vector3(ParallaxStart.transform.position.x + 200, YLoc, CurrentLayer.transform.position.z);
 
-            GameObject temp = CurrentLayer;
-            CurrentLayer = OffScreenLayer;
-            OffScreenLayer = temp;
+                GameObject temp = CurrentLayer;
+                CurrentLayer = OffScreenLayer;
+                OffScreenLayer = temp;
 
+            }
         }
+        else
+        {
+            if (CurrentLayer.transform.position.x < ParallaxStop.transform.position.x)
+            {
+                CurrentLayer.transform.position = new Vector3(ParallaxStart.transform.position.x, YLoc, CurrentLayer.transform.position.z);
 
+                GameObject temp = CurrentLayer;
+                CurrentLayer = OffScreenLayer;
+                OffScreenLayer = temp;
+
+            }
+        }
 
 
         if (PauseScroll)
@@ -58,10 +76,13 @@ public class ParallaxScroll : MonoBehaviour {
         {
             currentSpeed = Mathf.Lerp(currentSpeed, Speed, 0.1f);
         }
-	}
+    }
 
     public void Pause()
     {
-        PauseScroll = !PauseScroll;
-    }
+        if (!Sky)
+        {
+            PauseScroll = !PauseScroll;
+        }
+    } 
 }
