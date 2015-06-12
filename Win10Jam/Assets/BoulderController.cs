@@ -7,6 +7,8 @@ public class BoulderController : MonoBehaviour {
 
     public int HitPercentageReduction;
 
+    public GameObject iceParts;
+
     SpriteRenderer SR;
 
     CircleCollider2D CC;
@@ -19,28 +21,26 @@ public class BoulderController : MonoBehaviour {
 
         SR = GetComponent<SpriteRenderer>();
         CC = GetComponent<CircleCollider2D>();
-        size = CC.radius;
-
-
-
-	
+        size = CC.radius;	
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        transform.Rotate(new Vector3(0, 0, 1), 1)
-    ;
+        transform.Rotate(new Vector3(0, 0, 1), 1);
 	}
 
     void OnMouseDown()
     {
-        Lives -= 1;
+        Lives -= 1;        
 
         if (Lives < 1)
         {
+            iceParts.GetComponent<ParticleSystem>().startSize *= 2f;
             Kill();
         }
+
+        iceParts.GetComponent<ParticleSystem>().Play();
 
         float scale = transform.localScale.x;
 
