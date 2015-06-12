@@ -6,14 +6,14 @@ public class GameData : MonoBehaviour {
 
     private static GameData _GData;
 
-    public static int WindowsLost = 10;
-    public static int WindowsSaved = 20;
-    public static int TotalCracks = 10;
-    public static int CracksRepaired = 30;
-    public static int CarsSaved = 20;
-    public static int CarsLost = 10;
-    public static int FiresExtinguished = 30;
-    public static int BridgesSaved = 10;
+    public static int WindowsLost = 0;
+    public static int WindowsSaved = 0;
+    public static int TotalCracks = 0;
+    public static int CracksRepaired = 0;
+    public static int CarsSaved = 2;
+    public static int CarsLost = 0;
+    public static int FiresExtinguished = 0;
+    public static int BridgesSaved = 1;
 
 
     public static GameData GData
